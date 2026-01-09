@@ -1,0 +1,33 @@
+/*Selettore di tag*/
+h1{
+    color: red;
+}
+
+p{
+    color: blue;
+    font-size: 18px;
+}
+
+/*Selettore di classe (posso assegnare la classe a più elementi)*/
+.speciale{
+    color: red;
+    font-weight: bold;
+}
+
+/*Selettore di id (lo assegno a 1 solo elemento)*/
+#importante{
+    color: purple;
+    background-color: yellow;
+    padding: 10px;
+}
+
+/*Selettore di "figli diretti"*/ /*> è un combinatore*/
+section > p { /*Dice di prendere tutti i p all'interno solo di section (se ne ho all'interno di per esempio un div non verrà considerato)*/
+    background-color: lightblue;
+}
+
+/*Prende il primo fratello adiacente (che segue)*/
+h3 + p { /*In questo caso lo applica solo al primo p dopo h3*/
+    font-weight: bold;
+    color: green;
+}
