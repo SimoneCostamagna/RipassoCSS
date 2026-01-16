@@ -31,3 +31,28 @@ h3 + p { /*In questo caso lo applica solo al primo p dopo h3*/
     font-weight: bold;
     color: green;
 }
+
+/*tutti i discendenti*/
+section p{
+    color: brown;
+}
+
+/*PSEUDOCLASSI*/
+button{
+    background-color: green;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: darkgreen;
+    transform: scale(1.1); 
+}
+
+button:active{
+    transform: scale(0.95);
+}
